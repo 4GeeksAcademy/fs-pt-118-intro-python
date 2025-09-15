@@ -209,3 +209,40 @@ print(suma(4,9))
 
 ##no se pueden sumar letras con numeros
 print(str(2)+'hola') #str(2) convierte el 2 a '2' 
+
+
+
+#----------------------------------------------------segunda parte--------------------------------------------------------------------------
+
+def printer(string):
+    print('ejecutando la funcion printer')
+    print(string)
+
+
+#un loop que ejecuta una funcion 
+for i in range(10):
+    printer(i)
+
+
+#una funcion con un loop 
+def loopInFunction():
+    for num in range(5):
+        print(num*2)
+    return 'completed'
+
+print(loopInFunction())
+
+def returnsList():
+    return [5,6,7,8]
+#iterando el retorno de una funcion 
+for num in returnsList(): #siempre cuando pensamos en funciones, pensamos en lo que retorna la funcion
+    print(num)
+
+
+ls = [1,2,3,4,5,6]
+#range recibe 3 parametros, 
+# el primero es donde incia
+# el segundo, donde termina
+# el tercero los pasos que da desde el inicio hasta el final
+for num in range(10, 0, -1):
+    print('-1s',num)
